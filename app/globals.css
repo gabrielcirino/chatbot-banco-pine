@@ -1,0 +1,15 @@
+html, body, #__next {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background: #ffffff;
+    color: #361819;
+    font-family: sans-serif;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
