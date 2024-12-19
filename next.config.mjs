@@ -1,12 +1,11 @@
-import bundleAnalyzer from '@next/bundle-analyzer';
-
-const withBundleAnalyzer = bundleAnalyzer({
-  enabled: process.env.ANALYZE === 'true',
-});
-
-export default withBundleAnalyzer({
-  reactStrictMode: false,
+const nextConfig = {
+  reactStrictMode: true,
   eslint: {
     ignoreDuringBuilds: true,
   },
-});
+  experimental: {
+    appDir: true, // Remova se não estiver usando a pasta "app"
+  },
+};
+
+export default nextConfig;
